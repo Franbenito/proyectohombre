@@ -1,0 +1,108 @@
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">
+                    Ajustes globales
+                </h4>
+                <h6 class="card-subtitle"> Notificaciones Push</h6>
+                <hr>
+                <p class="card-text">Los ajustes de esta sección solo serán aplicados para el dispositivo que estás utilizando actualmente.</p>
+                <div class="col-6">
+                    <div class="switch">
+                        <label>Desactivadas <input type="checkbox" checked><span class="lever"></span>Activadas</label>
+                    </div>
+                </div>
+                <br><br>
+                <h6 class="card-subtitle"> Solicitar confirmación</h6>
+                <hr>
+                <p class="card-text">Solicitar confirmación al aceptar ofertas y pujas.</p>
+                <div class="col-6">
+                    <div class="switch">
+                        <label>Desactivadas <input type="checkbox" checked><span class="lever"></span>Activadas</label>
+                    </div>
+                </div>
+                <br><br>
+                <button type="submit" class="btn btn-secondary waves-effect waves-light m-r-10">Recargar web/app</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">
+                    Temas
+                </h4>
+                <hr>
+                <div class="r-panel-body">
+                    <ul id="themecolors" class="m-t-20">
+                        <li><b>Con el sidebar claro</b></li>
+                        <li><a #link1 (click)="cambiarColor('default', link1 )" data-theme="default" class="selector default-theme">1</a></li>
+                        <li><a #link2 (click)="cambiarColor('green', link2 )" data-theme="green" class="selector green-theme">2</a></li>
+                        <li><a #link3 (click)="cambiarColor('red', link3 )" data-theme="red" class="selector red-theme">3</a></li>
+                        <li><a #link4 (click)="cambiarColor('blue', link4 )" data-theme="blue" class="selector blue-theme">4</a></li>
+                        <li><a #link5 (click)="cambiarColor('purple', link5 )" data-theme="purple" class="selector purple-theme">5</a></li>
+                        <li><a #link6 (click)="cambiarColor('megna', link6 )" data-theme="megna" class="selector megna-theme">6</a></li>
+
+                        <li class="d-block m-t-30"><b>Con el sidebar oscuro</b></li>
+                        <li><a #link7 (click)="cambiarColor('default-dark', link7 )" data-theme="default-dark" class="selector default-dark-theme">7</a></li>
+                        <li><a #link8 (click)="cambiarColor('green-dark', link8 )" data-theme="green-dark" class="selector green-dark-theme">8</a></li>
+                        <li><a #link9 (click)="cambiarColor('red-dark', link9 )" data-theme="red-dark" class="selector red-dark-theme">9</a></li>
+                        <li><a #link10 (click)="cambiarColor('blue-dark', link10 )" data-theme="blue-dark" class="selector blue-dark-theme">10</a></li>
+                        <li><a #link11 (click)="cambiarColor('purple-dark', link11 )" data-theme="purple-dark" class="selector purple-dark-theme">11</a></li>
+                        <li><a #link12 (click)="cambiarColor('megna-dark', link12 )" data-theme="megna-dark" class="selector megna-dark-theme">12</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">
+                    Idioma
+                </h4>
+                <hr>
+                <p class="card-text">Selecciona el idioma con el que vas a jugar</p>
+                <div class="col-md-9">
+                    <select class="form-control custom-select">
+                    <option value="">Español</option>
+                    <option value="">English</option>
+                    <option value="">French</option>
+                    <option value="">Italiano</option>
+                    <option value="">Dutch</option>
+                </select>
+                </div>
+                <br><br>
+                <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Guardar cambios</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">¿Quieres abandonar esta liga?</h4>
+                <p class="card-text">Pulsa el siguiente botón si quieres dejar de participar en esta liga, pero continuar jugando con el resto.</p>
+                <a href="#" class="btn btn-danger">Abandonar <i>Nombredelaliga</i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">¿Quieres eliminar tu cuenta?</h4>
+                <p class="card-text">Si no quieres seguir siendo un usuario de Biwenger ni participar en ninguna de sus ligas, puedes borrar tu cuenta a través del siguiente enlace. Recuerda que los datos eliminados no podrán ser recuperados.</p>
+                <a href="#" class="btn btn-danger">Eliminar mi cuenta</a>
+            </div>
+        </div>
+    </div>
+</div>

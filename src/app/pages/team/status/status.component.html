@@ -1,0 +1,466 @@
+<div class="row">
+    <div class="col-12">
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Plantilla</h4>
+                <h6 class="card-subtitle">Nombredeusuario</h6>
+
+                <div class="table-responsive">
+                    <table id="jugadores" class="table m-t-30 table-hover table-striped no-wrap contact-list data-sort-name" data-page-size="10">
+                        <thead>
+                            <tr>
+                                <th class="sortable both">Posición</th>
+                                <th>Club</th>
+                                <th>Nombre</th>
+                                <th>Foto</th>
+                                <th>País</th>
+                                <th>Media</th>
+                                <th>Potencial</th>
+                                <th>Estado</th>
+                                <th>Valor</th>
+                                <th>%</th>
+                                <th>Salario</th>
+                                <th>Mercado</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td><span class="label label-info">DC</span> <span class="label label-info">EI</span></td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/243.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="#/player"> Cristiano Ronaldo</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/20801.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/38.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">94</span></td>
+                                <td><span class="label label-p80 ">94</span></td>
+                                <td><i class="fa fa-check-square"></i></td>
+                                <td> 95.500.000 € </td>
+                                <td class="mv-decrement"> - 2.100.000 € </td>
+                                <td> 565.000 € </td>
+                                <td>
+                                    <div>
+                                        <div>
+
+                                            <!-- sample modal content -->
+                                            <div id="modaloferta" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">Oferta por Cristiano Ronaldo</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="table-responsive">
+                                                                <table id="jugadores" class="table m-t-30 table-hover table-striped no-wrap contact-list" data-page-size="10">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Equipo</th>
+                                                                            <th>Valor</th>
+                                                                            <th>Oferta</th>
+                                                                            <th>Opciones</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+
+                                                                            <td><img src="https://cdn.sofifa.org/24/18/teams/45.png" alt="user" class="img-circle" /> Juventus</td>
+                                                                            <td>95.500.000 €</td>
+                                                                            <td>210.000.000 €</td>
+                                                                            <td> <button type="button" class="btn btn-success waves-effect" data-dismiss="modal">Aceptar</button>
+                                                                                <button type="button" class="btn btn-danger waves-effect waves-light">Rechazar</button>
+                                                                            </td>
+                                                                        </tr>
+                                                                </table>
+                                                                <div class="text-center text-muted">Fichado el 22/8/18 por 200.000.000 € <span class="mv-decrement">- 104.500.000 €</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cerrar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- /.modal -->
+                                            <button class="btn btn-success" data-toggle="modal" data-target="#modaloferta">1 oferta</button>
+
+                                            <!-- sample modal content -->
+                                            <div id="modalenventa" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">Oferta por Cristiano Ronaldo</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="table-responsive">
+                                                                <table id="jugadores" class="table m-t-30 table-hover table-striped no-wrap contact-list" data-page-size="10">
+                                                                    <thead>
+                                                                        <tr>
+
+                                                                            <th class="text-center">Precio de venta</th>
+
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input id="tch3" type="number" value="105.000.000" name="tch3" data-bts-button-down-class="btn btn-secondary btn-outline" data-bts-button-up-class="btn btn-secondary btn-outline">
+                                                                                </div>
+                                                                            </td>
+
+                                                                        </tr>
+                                                                </table>
+                                                                <div class="text-center text-muted">Fichado el 22/8/18 por 200.000.000 <span class="mv-decrement">- 104.500.000 €</span></div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cerrar</button>
+                                                            <button type="button" class="btn btn-warning waves-effect" data-dismiss="modal">Renovar</button>
+                                                            <button type="button" class="btn btn-danger waves-effect waves-light">Retirar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- /.modal -->
+                                            <button class="btn btn-secondary" data-toggle="modal" data-target="#modalenventa">En venta</button>
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><span class="label label-info">ED</span></td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/241.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="app-contact-detail.html"> L. Messi</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/158023.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/52.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">93</span></td>
+                                <td><span class="label label-p80 ">93</span></td>
+                                <td><i class="fa fa-check-square"></i></td>
+                                <td> 105.000.000 € </td>
+                                <td class="mv-equal"> 0 € </td>
+                                <td> 565.000 € </td>
+                                <td>
+                                    <div>
+
+                                        <!-- sample modal content -->
+                                        <div id="modalvender" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Vender a L. Messi</h4>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="table-responsive">
+                                                            <table id="jugadores" class="table m-t-30 table-hover table-striped no-wrap contact-list" data-page-size="10">
+                                                                <thead>
+                                                                    <tr>
+
+                                                                        <th class="text-center">Precio de venta</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+
+                                                                        <td>
+                                                                            <div class="form-group">
+                                                                                <input id="tch3" type="number" value="105.000.000" name="tch3" data-bts-button-down-class="btn btn-secondary btn-outline" data-bts-button-up-class="btn btn-secondary btn-outline">
+                                                                            </div>
+                                                                        </td>
+
+                                                                    </tr>
+                                                            </table>
+                                                            <div class="text-center text-muted">Es tuyo desde el 1/9/2018</div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-warning waves-effect waves-light">Vender</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- /.modal -->
+                                        <button class="btn btn-warning" data-toggle="modal" data-target="#modalvender">Vender</button>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><span class="label label-info">EI</span></td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/73.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="app-contact-detail.html"> Neymar</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/190871.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/54.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">92</span></td>
+                                <td><span class="label label-p80 ">94</span></td>
+                                <td><i class="fa fa-plus-square"></i></td>
+                                <td> 123.000.000 € </td>
+                                <td class="mv-increment"> + 5.700.000 € </td>
+                                <td> 280.000 € </td>
+                                <td>
+                                    <div>
+                                        <button class="btn btn-warning">Vender</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><span class="label label-info">DC</span> </td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/241.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="app-contact-detail.html"> L. Suárez</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/176580.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/60.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">92</span></td>
+                                <td><span class="label label-p80 ">92</span></td>
+                                <td><i class="fa fa-check-square"></i></td>
+                                <td> 97.000.000 € </td>
+                                <td class="mv-equal"> 0 € </td>
+                                <td> 510.000 € </td>
+                                <td>
+                                    <div>
+                                        <button class="btn btn-warning">Vender</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><span class="label label-danger">PT</span> </td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/21.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="app-contact-detail.html"> M. Neuer</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/167495.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/21.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">92</span></td>
+                                <td><span class="label label-p80 ">92</span></td>
+                                <td><i class="fa fa-check-square"></i></td>
+                                <td> 61.000.000 € </td>
+                                <td class="mv-equal"> 0 € </td>
+                                <td> 230.000 € </td>
+                                <td>
+                                    <div>
+                                        <button class="btn btn-warning">Vender</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><span class="label label-info">DC</span></td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/21.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="app-contact-detail.html"> R. Lewandowski</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/188545.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/37.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">91</span></td>
+                                <td><span class="label label-p80 ">91</span></td>
+                                <td><i class="fa fa-square"></i></td>
+                                <td> 92.000.000 € </td>
+                                <td class="mv-decrement"> - 2.000.000 € </td>
+                                <td> 355.000 € </td>
+                                <td>
+                                    <div>
+                                        <button class="btn btn-warning">Vender</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><span class="label label-danger">PT</span> </td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/11.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="app-contact-detail.html"> De Gea</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/193080.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/45.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">90</span></td>
+                                <td><span class="label label-p80 ">92</span></td>
+                                <td><i class="fa fa-check-square"></i></td>
+                                <td> 64.500.000 € </td>
+                                <td class="mv-increment"> 11.300.000 € </td>
+                                <td> 215.000 € </td>
+                                <td>
+                                    <div>
+                                        <button class="btn btn-warning">Vender</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><span class="label label-info">EI</span> </td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/5.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="app-contact-detail.html"> E. Hazard</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/183277.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/7.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">90</span></td>
+                                <td><span class="label label-p80 ">91</span></td>
+                                <td><i class="fa fa-check-square"></i></td>
+                                <td> 90.500.000 € </td>
+                                <td class="mv-increment"> 5.250.000 € </td>
+                                <td> 295.000 € </td>
+                                <td>
+                                    <div>
+                                        <button class="btn btn-warning">Vender</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><span class="label label-success">MC</span> <span class="label label-success">MCD</span></td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/243.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="app-contact-detail.html"> T. Kroos</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/182521.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/7.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">90</span></td>
+                                <td><span class="label label-p80 ">90</span></td>
+                                <td><i class="fa fa-check-square"></i></td>
+                                <td> 79.000.000 € </td>
+                                <td class="mv-equal"> 0 € </td>
+                                <td> 340.000 € </td>
+                                <td>
+                                    <div>
+                                        <button class="btn btn-warning">Vender</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><span class="label label-info">DC</span> </td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/45.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="app-contact-detail.html"> G. Higuaín</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/167664.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/52.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">90</span></td>
+                                <td><span class="label label-p80 ">90</span></td>
+                                <td><i class="fa fa-check-square"></i></td>
+                                <td> 77.000.000 € </td>
+                                <td class="mv-decrement"> 7.500.000 € </td>
+                                <td> 275.000 € </td>
+                                <td>
+                                    <div>
+                                        <button class="btn btn-warning">Vender</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><span class="label label-warning">DFC</span> </td>
+
+                                <td> <img src="https://cdn.sofifa.org/24/18/teams/243.png" alt="user" class="img-circle" /> </td>
+                                <td>
+                                    <a href="app-contact-detail.html"> Sergio Ramos</a>
+                                </td>
+                                <td><img src="https://cdn.sofifa.org/48/18/players/155862.png" alt="user" class="img-circle" /></td>
+                                <td><img src="https://cdn.sofifa.org/flags/45.png" alt="user" class="img-circle" /></td>
+                                <td><span class="label label-p80 ">90</span></td>
+                                <td><span class="label label-p80 ">90</span></td>
+                                <td><i class="fa fa-question-circle"></i></td>
+                                <td> 52.000.000 € </td>
+                                <td class="mv-equal"> 0 € </td>
+                                <td> 310.000 € </td>
+                                <td>
+                                    <div>
+                                        <button class="btn btn-warning">Vender</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+
+                            <tfoot>
+
+
+
+                            </tfoot>
+                    </table>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="btn-group">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-info">1</button>
+                        <button type="button" class="btn btn-disabled">2</button>
+                    </div>
+                    <input type="text" id="demo-input-search2" placeholder="Filtrar" class="form-control">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-navicon"></i>
+                        </button>
+                    <div class="dropdown-menu"> Ordenar por
+                        <a class="dropdown-item" href="#">Posición</a>
+                        <a class="dropdown-item" href="#">Club</a>
+                        <a class="dropdown-item" href="#">Jugador</a>
+                        <a class="dropdown-item" href="#">Forma</a>
+                        <a class="dropdown-item" href="#">Valor de mercado</a>
+                        <a class="dropdown-item" href="#">Bajones y subidones</a>
+                        <a class="dropdown-item" href="#">Estado</a>
+                        <a class="dropdown-item" href="#">Media de puntos</a>
+                        <a class="dropdown-item" href="#">Salarios</a>
+                    </div>
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-wrench"></i>
+                            Herramientas
+                        </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Poner toda la plantilla en transferibles</a>
+                        <a class="dropdown-item" href="#">Renovar todos los jugadores en venta</a>
+                        <a class="dropdown-item" href="#">Retirar todos los jugadores en venta</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- End PAge Content -->
+<!-- ============================================================== -->

@@ -1,0 +1,127 @@
+<div class="row">
+
+    <div class="col-lg-12 col-xlg-12 col-md-12 col-sm-12">
+        <div class="card text-center">
+            <div class="card-body">
+                <h4 class="card-title">{{ graficos.grafico3.leyenda }} </h4>
+                <app-grafico-linea [chartLabels]="graficos.grafico3.labels" [chartData]="graficos.grafico3.data" chartType="line"></app-grafico-linea>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-6 col-xlg-6 col-md-6 col-sm-6">
+        <div class="card text-center no-padding-bottom">
+            <div class="card-body">
+
+                <h4>Sponsor oficial</h4>
+                <img src="assets/images/sponsors/movistarmini.jpg" alt="ferrari">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-xlg-6 col-md-6 col-sm-6">
+        <div class="card text-center">
+            <div class="card-body">
+                <h4 class="card-title">Tope Salarial</h4>
+                <div class="collapse m-t-15" id="pgr3"> <pre class="line-numbers language-javascript"></pre> </div>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-danger progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%; height:10px;" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+                </div>
+                <br><br>
+                <h6>Tope Salarial: <strong>74.000.000 €</strong></h6>
+                <h6>Salarios: <strong>69.000.000 €</strong></h6>
+                <h6>Impuesto de lujo: <strong>0 €</strong></h6>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6 col-xlg-6 col-md-6 col-sm-6">
+        <div class="card text-center">
+            <div class="card-body">
+                <h4 class="card-title">{{ graficos.grafico1.leyenda }} </h4>
+                <app-grafico-dona [chartLabels]="graficos.grafico1.labels" [chartData]="graficos.grafico1.data" chartType="doughnut"></app-grafico-dona>
+                <div class="table-responsive">
+                    <table id="jugadores" class="table m-t-30 table-hover table-striped no-wrap contact-list" data-page-size="10">
+                        <thead>
+                            <tr>
+                                <th>Concepto</th>
+                                <th>Importe</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fichajes</td>
+                                <td>110.000.000 €</td>
+                            </tr>
+                            <tr>
+                                <td>Sponsor</td>
+                                <td>34.000.000 €</td>
+                            </tr>
+                            <tr>
+                                <td>TVs</td>
+                                <td>65.000.000 €</td>
+                            </tr>
+                            <tr>
+                                <td>Competiciones</td>
+                                <td>96.000.000 €</td>
+                            </tr>
+
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-xlg-6 col-md-6 col-sm-6">
+        <div class="card text-center">
+            <div class="card-body">
+                <h4 class="card-title">{{ graficos.grafico2.leyenda }} </h4>
+                <app-grafico-dona [chartLabels]="graficos.grafico2.labels" [chartData]="graficos.grafico2.data" chartType="doughnut"></app-grafico-dona>
+                <div class="table-responsive">
+                    <table id="jugadores" class="table m-t-30 table-hover table-striped no-wrap contact-list" data-page-size="10">
+                        <thead>
+                            <tr>
+                                <th>Concepto</th>
+                                <th>Importe</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fichajes</td>
+                                <td>101.000.000 €</td>
+                            </tr>
+                            <tr>
+                                <td>Salarios</td>
+                                <td>74.000.000 €</td>
+                            </tr>
+                            <tr>
+                                <td>Sanciones</td>
+                                <td>30.000.000 €</td>
+                            </tr>
+                            <tr>
+                                <td>Otros gastos</td>
+                                <td>18.000.000 €</td>
+                            </tr>
+
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>

@@ -10,67 +10,85 @@
                 <li class="user-profile">
                     <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><img src="../assets/images/users/0.jpg" alt="user" /><span class="hide-menu">Franbe Nito </span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="javascript:void()">Mi Perfil </a></li>
-                        <li><a href="javascript:void()">Palmarés</a></li>
-                        <li><a href="javascript:void()">Mensajes</a></li>
-                        <li><a href="javascript:void()">Ajustes de cuenta</a></li>
-                        <li><a href="javascript:void()">Cerrar sesión</a></li>
+                        <li><a href="#/profile">Mi Perfil </a></li>
+                        <li><a href="#/records">Palmarés</a></li>
+                        <li><a routerLinkActive="active" routerLink="/notifications">Notificaciones</a></li>
+                        <li><a routerLinkActive="active" routerLink="/account-settings">Ajustes de cuenta</a></li>
+                        <li><a routerLinkActive="active" routerLink="/login">Cerrar sesión</a></li>
                     </ul>
                 </li>
                 <li class="nav-devider"></li>
                 <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-home"></i><span class="hide-menu">Inicio </span></a>
+
+
                     <li class="nav-small-cap">CLUB </li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-tshirt-crew"></i><span class="hide-menu">Plantilla <span class="label label-rouded label-themecolor pull-right">4</span></span></a>
+
+
+                    <li *ngFor="let menu of _sidebar.menu"> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu.icono"></i><span class="hide-menu"> {{ menu.titulo }} <span class="label label-rouded label-warning pull-right">{{ menu.submenu.length }}</span></span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a href="index.html">Estado del equipo </a></li>
-                            <li><a href="index2.html">Transferibles </a></li>
-                            <li><a href="index2.html">Ofertas </a></li>
+                            <li *ngFor="let submenu of menu.submenu">
+                                <a routerLinkActive="active" [routerLink]="[ submenu.url ]">{{ submenu.titulo }} </a></li>
+
                         </ul>
                     </li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-currency-eur"></i><span class="hide-menu">Finanzas <span class="label label-rouded label-success pull-right">S</span></span></a>
+                    <li *ngFor="let menu2 of _sidebar.menu2"> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu2.icono2"></i><span class="hide-menu"> {{ menu2.titulo2 }} <span class="label label-rouded label-danger pull-right">{{ menu2.submenu2.length }}</span></span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a href="index.html">Salarios </a></li>
-                            <li><a href="index2.html">Sponsor </a></li>
-                            <li><a href="index2.html">Balance </a></li>
+                            <li *ngFor="let submenu2 of menu2.submenu2">
+                                <a routerLinkActive="active" [routerLink]="[ submenu2.url ]">{{ submenu2.titulo }} </a></li>
+
                         </ul>
                     </li>
+
                     <li class="nav-small-cap">COMPETICIONES </li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-trophy"></i><span class="hide-menu">Clasificaciones </span></a>
+
+
+                    <li *ngFor="let menu3 of _sidebar.menu3"> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu3.icono3"></i><span class="hide-menu"> {{ menu3.titulo3 }} </span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a href="index.html">Liga </a></li>
-                            <li><a href="index2.html">Copa del Rey </a></li>
-                            <li><a href="index2.html">Champions League </a></li>
-                            <li><a href="index2.html">Europa League </a></li>
+                            <li *ngFor="let submenu3 of menu3.submenu3">
+                                <a routerLinkActive="active" [routerLink]="[ submenu3.url ]">{{ submenu3.titulo }} </a></li>
+
                         </ul>
                     </li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">Calendario </span></a>
+                    <li *ngFor="let menu4 of _sidebar.menu4"> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu4.icono4"></i><span class="hide-menu"> {{ menu4.titulo4 }} </span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a href="index.html">Liga </a></li>
-                            <li><a href="index2.html">Copa del Rey </a></li>
-                            <li><a href="index2.html">Champions League </a></li>
-                            <li><a href="index2.html">Europa League </a></li>
+                            <li *ngFor="let submenu4 of menu4.submenu4">
+                                <a routerLinkActive="active" [routerLink]="[ submenu4.url ]">{{ submenu4.titulo }} </a></li>
+
                         </ul>
                     </li>
+
                     <li class="nav-small-cap">MERCADO </li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-transit-transfer"></i><span class="hide-menu">Fichajes <span class="label label-rouded label-danger pull-right">A</span></span></a>
+
+                    <li *ngFor="let menu5 of _sidebar.menu5"> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu5.icono5"></i><span class="hide-menu"> {{ menu5.titulo5 }} <span class="label label-rouded label-success pull-right">{{ menu5.submenu5.length }}</span> </span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a href="index.html">Acuerdos </a></li>
-                            <li><a href="index2.html">Subastas </a></li>
-                            <li><a href="index2.html">Cláusulas </a></li>
+                            <li *ngFor="let submenu5 of menu5.submenu5">
+                                <a routerLinkActive="active" [routerLink]="[ submenu5.url ]">{{ submenu5.titulo }} </a></li>
+
                         </ul>
                     </li>
+
                     <li class="nav-small-cap">BASE DE DATOS </li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-human-greeting"></i><span class="hide-menu">Jugadores </span></a>
-                    </li>
-                    <li class="nav-devider"></li>
-                    <li class="nav-small-cap">INSTITUCIONAL </li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-wallet-travel"></i><span class="hide-menu">Liga <span class="label label-rouded label-warning pull-right">N</span></span></a>
+
+                    <li *ngFor="let menu6 of _sidebar.menu6"> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu6.icono6"></i><span class="hide-menu"> {{ menu6.titulo6 }} </span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a href="index.html">Noticias </a></li>
-                            <li><a href="index2.html">Normas </a></li>
-                            <li><a href="index2.html">Managers </a></li>
+                            <li *ngFor="let submenu6 of menu6.submenu6">
+                                <a routerLinkActive="active" [routerLink]="[ submenu6.url ]">{{ submenu6.titulo }} </a></li>
+
                         </ul>
                     </li>
+
+                    <li class="nav-devider"></li>
+
+                    <li class="nav-small-cap">INSTITUCIONAL </li>
+
+                    <li *ngFor="let menu7 of _sidebar.menu7"> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu7.icono7"></i><span class="hide-menu"> {{ menu7.titulo7 }} <span class="label label-rouded label-themecolor pull-right">{{ menu7.submenu7.length }}</span></span></a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li *ngFor="let submenu7 of menu7.submenu7">
+                                <a routerLinkActive="active" [routerLink]="[ submenu7.url ]">{{ submenu7.titulo }} </a></li>
+
+                        </ul>
+                    </li>
+
             </ul>
         </nav>
         <!-- End Sidebar navigation -->
