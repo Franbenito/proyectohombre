@@ -42,6 +42,9 @@ import { PrivateComponent } from './add/join/private/private.component';
 import { RandomComponent } from './add/join/random/random.component';
 import { AdsComponent } from './ads/ads.component';
 import { PlayerdetailComponent } from './players/playerdetail/playerdetail.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+
 
 
 
@@ -50,59 +53,61 @@ const pagesRoutes: Routes = [
             path: '',
             component: PagesComponent,
             children: [
-                { path: 'dashboard', component: DashboardComponent },
+                { path: 'dashboard', component: DashboardComponent, data: { titulo: 'Escritorio' } },
 
 
-                { path: 'status', component: StatusComponent },
+                { path: 'status', component: StatusComponent,  data: { titulo: 'Estado' }  },
 
 
-                { path: 'wages', component: WagesComponent },
-                { path: 'sponsor', component: SponsorComponent },
-                { path: 'balance', component: BalanceComponent },
+                { path: 'wages', component: WagesComponent,  data: { titulo: 'Salarios' } },
+                { path: 'sponsor', component: SponsorComponent,  data: { titulo: 'Patrocinador' } },
+                { path: 'balance', component: BalanceComponent,  data: { titulo: 'Finanzas' } },
 
-                { path: 'league', component: LeagueComponent },
-                { path: 'tournament', component: TournamentComponent },
-                { path: 'champions', component: ChampionsComponent },
-                { path: 'europe', component: EuropeComponent },
+                { path: 'league', component: LeagueComponent,  data: { titulo: 'Clasificaciones Liga' } },
+                { path: 'tournament', component: TournamentComponent,  data: { titulo: 'Clasificaciones Copa' } },
+                { path: 'champions', component: ChampionsComponent,  data: { titulo: 'Clasificaciones Champions League' } },
+                { path: 'europe', component: EuropeComponent,  data: { titulo: 'Clasificaciones Europa League' } },
 
-                { path: 'leaguecal', component: LeaguecalComponent },
-                { path: 'tournamentcal', component: TournamentcalComponent },
-                { path: 'championscal', component: ChampionscalComponent },
-                { path: 'europecal', component: EuropecalComponent },
+                { path: 'leaguecal', component: LeaguecalComponent,  data: { titulo: 'Calendario Liga' } },
+                { path: 'tournamentcal', component: TournamentcalComponent,  data: { titulo: 'Calendario Copa' } },
+                { path: 'championscal', component: ChampionscalComponent,  data: { titulo: 'Calendario Champions League' } },
+                { path: 'europecal', component: EuropecalComponent,  data: { titulo: 'Calendario Europa League' } },
 
-                { path: 'agreements', component: AgreementsComponent },
-                { path: 'auctions', component: AuctionsComponent },
-                { path: 'clauses', component: ClausesComponent },
-                { path: 'transferables', component: TransferablesComponent },
+                { path: 'agreements', component: AgreementsComponent,  data: { titulo: 'Acuerdos' } },
+                { path: 'auctions', component: AuctionsComponent,  data: { titulo: 'Subastas' } },
+                { path: 'clauses', component: ClausesComponent,  data: { titulo: 'Cláusulas' } },
+                { path: 'transferables', component: TransferablesComponent,  data: { titulo: 'Transferibles' } },
 
-                { path: 'freeplayers', component: FreeplayersComponent },
-                { path: 'byteams', component: ByteamsComponent },
+                { path: 'freeplayers', component: FreeplayersComponent,  data: { titulo: 'Jugadores libres' } },
+                { path: 'byteams', component: ByteamsComponent,  data: { titulo: 'Jugadores por equipos' } },
 
-                { path: 'news', component: NewsComponent },
-                { path: 'rules', component: RulesComponent },
-                { path: 'managers', component: ManagersComponent },
+                { path: 'news', component: NewsComponent,  data: { titulo: 'Noticias' } },
+                { path: 'rules', component: RulesComponent,  data: { titulo: 'Normas' } },
+                { path: 'managers', component: ManagersComponent,  data: { titulo: 'Managers' } },
 
-                { path: 'chat', component: ChatComponent },
-                { path: 'notifications', component: NotificationsComponent },
+                { path: 'chat', component: ChatComponent,  data: { titulo: 'Chat' } },
+                { path: 'notifications', component: NotificationsComponent,  data: { titulo: 'Notificaciones' } },
 
-                { path: 'add', component: AddComponent },
-                { path: 'create', component: CreateComponent },
-                { path: 'step1', component: Step1Component },
-                { path: 'step2', component: Step2Component },
-                { path: 'join', component: JoinComponent },
-                { path: 'private', component: PrivateComponent },
-                { path: 'random', component: RandomComponent },
+                { path: 'add', component: AddComponent,  data: { titulo: 'Agregar una liga' } },
+                { path: 'create', component: CreateComponent,  data: { titulo: 'Crear una liga' } },
+                { path: 'step1', component: Step1Component,  data: { titulo: 'Paso 1' } },
+                { path: 'step2', component: Step2Component,  data: { titulo: 'Paso 2' } },
+                { path: 'join', component: JoinComponent,  data: { titulo: 'Unirse a una liga' } },
+                { path: 'private', component: PrivateComponent,  data: { titulo: 'Liga privada' } },
+                { path: 'random', component: RandomComponent,  data: { titulo: 'Liga aleatoria' } },
 
-                { path: 'ads', component: AdsComponent },
+                { path: 'ads', component: AdsComponent,  data: { titulo: 'Publicidad' } },
 
-                { path: 'player', component: PlayerdetailComponent },
+                { path: 'player', component: PlayerdetailComponent,  data: { titulo: 'Jugador' } },
 
-                { path: 'progress', component: ProgressComponent },
-                { path: 'graficas1', component: Graficas1Component },
-                { path: 'account-settings', component: AccountSettingsComponent },
-                { path: 'league-settings', component: LeagueSettingsComponent },
-                { path: 'profile', component: ProfileComponent },
-                { path: 'records', component: RecordsComponent },
+                { path: 'progress', component: ProgressComponent,  data: { titulo: 'Progress' } },
+                { path: 'graficas1', component: Graficas1Component,  data: { titulo: 'Gráficas' } },
+                { path: 'promesas', component: PromesasComponent,  data: { titulo: 'Promesas' } },
+                { path: 'rxjs', component: RxjsComponent,  data: { titulo: 'Rxjs' } },
+                { path: 'account-settings', component: AccountSettingsComponent,  data: { titulo: 'Ajustes de la cuenta' } },
+                { path: 'league-settings', component: LeagueSettingsComponent,  data: { titulo: 'Ajustes de la liga' } },
+                { path: 'profile', component: ProfileComponent,  data: { titulo: 'Perfil' } },
+                { path: 'records', component: RecordsComponent,  data: { titulo: 'Récords' } },
                 { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
             ]
     }

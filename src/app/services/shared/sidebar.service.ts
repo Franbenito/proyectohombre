@@ -8,7 +8,11 @@ export class SidebarService {
       titulo: 'Plantilla',
       icono: 'mdi mdi-tshirt-crew',
       submenu: [
-        { titulo: 'Estado del equipo', url:  '/status' }
+        { titulo: 'Estado del equipo', url:  '/status' },
+        { titulo: 'Rxjs', url:  '/rxjs' },
+        { titulo: 'Gráficas', url:  '/graficas1' },
+        { titulo: 'Promesas', url:  '/promesas' },
+        { titulo: 'Progress', url:  '/progress' }
       ]
 
     }

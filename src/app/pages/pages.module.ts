@@ -59,6 +59,8 @@ import { PrivateComponent } from './add/join/private/private.component';
 import { RandomComponent } from './add/join/random/random.component';
 import { AdsComponent } from './ads/ads.component';
 import { PlayerdetailComponent } from './players/playerdetail/playerdetail.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -105,13 +107,15 @@ import { PlayerdetailComponent } from './players/playerdetail/playerdetail.compo
         PrivateComponent,
         RandomComponent,
         AdsComponent,
-        PlayerdetailComponent
+        PlayerdetailComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
 
     exports: [
         DashboardComponent,
         ProgressComponent,
-        Graficas1Component,
+        Graficas1Component
     ],
 
     imports: [
